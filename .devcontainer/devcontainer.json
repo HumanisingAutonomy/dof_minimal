@@ -1,0 +1,21 @@
+{
+    "dockerFile": "Dockerfile",
+    "name": "CUDA",
+    "runArgs": [
+        "--gpus",
+        "all",
+        "-e",
+        "NVIDIA_DRIVER_CAPABILITIES=all"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "github.vscode-github-actions",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "remoteUser": "dev"
+}
